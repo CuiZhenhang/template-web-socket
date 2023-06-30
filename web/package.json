@@ -1,0 +1,23 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "tsc --build && webpack --watch",
+    "eslint": "eslint --fix src --ext .ts",
+    "prettier": "prettier --write \"src/**/*.ts\"",
+    "build": "npm run eslint && npm run prettier && tsc --build && webpack --env production"
+  },
+  "author": "CuiZhenhang",
+  "license": "MIT",
+  "dependencies": {
+    "petite-vue": "^0.4.1",
+    "socket.io-client": "^4.7.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.4.3",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

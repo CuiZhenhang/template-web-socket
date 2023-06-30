@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-shadow: inset 0 0 1px; */
+}
+
+div,
+canvas,
+img,
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+div {
+    overflow: hidden;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: aliceblue;
+}
+
+#app > * {
+    margin-top: 10px;
+}
+
+#app > button {
+    width: 180px;
+    height: 30px;
+}
