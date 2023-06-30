@@ -58,7 +58,7 @@ To package, run this or something like this:
 ```sh
 # this will package an executable `.exe` file in the folder `executables`.
 cd template-web-socket
-pkg . -t node16-win-x64
+npx pkg . -t node16-win-x64
 ```
 
 JavaScript files in the folder [./dist/](./dist/) will be compiled and packaged.<br>
